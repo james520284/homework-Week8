@@ -1,0 +1,11 @@
+.btnType1{
+    background-color: $myprimary-5;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 12px;
+    text-align: center;
+    transition: .3s;
+}
+.btnType1:hover {
+    background-color: $myprimary-6;
+}

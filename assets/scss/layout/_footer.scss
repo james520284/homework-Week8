@@ -1,0 +1,28 @@
+.footer{
+    border-radius: 48px 48px 0px 0px ;
+    &-logo img{
+        width: 200px;
+    }
+    &-nav li a{
+        font-size: 14px;
+        transition: .3s;
+        &:hover {
+            text-shadow: 0px 0px 3px white;
+        }
+    }
+    .sns-ic li{
+        transition: .3s;
+        &:hover {
+            transform: scale(1.1);
+            text-shadow: 0px 0px 3px white;
+        }
+    }
+
+    @include rwd-md-min{
+        border-radius: 80px 80px 0px 0px;
+        &-nav li a {
+            font-size: 16px;
+        }
+        
+    }
+}

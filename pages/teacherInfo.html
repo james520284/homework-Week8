@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>title</title>
+    </head>
+    <body>
+        <%- include('./layout/header'); -%>
+        <main class="teacherInfo-main">
+            <section class="sec1 bg-cover">
+            </section>
+            <section class="sec2">
+                <div class="container">
+                    <div class="row flex-column flex-lg-row">
+                        <div class="col col-lg-3">
+                            <div class="text-center text-lg-start">
+                                <picture>
+                                    <source srcset="../assets/images/icons/ic_ hexschool-lg.png" media="(min-width:992px)" >
+                                    <img src="../assets/images/icons/ic_ hexschool-lg.png" alt="hexschool" class="brand p3 p-lg5 bg-white rounded-circle">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col col-lg-9 wrap">
+                            <div class="text-center text-lg-start">
+                                <h3 class="text-black fz-lg12 mt-lg20">六角學院</h3>
+                                <ul class="data d-flex pl0 justify-content-center justify-content-lg-start py4 py-lg6">
+                                    <li><span class="myprimary-5 fw-7 fz-4 fz-lg5">4</span>堂課</li>
+                                    <li class="border-start border-end border-2"><span class="myprimary-5 fw-7 fz-4 fz-lg5">8463</span>收藏數</li>
+                                    <li><span class="myprimary-5 fw-7 fz-4 fz-lg5">20,218</span>個學生</li>
+                                </ul> 
+                                <p class="text-start fz-subtitle mb4 mb-lg6">六角學院 是一所線上程式開發學習單位，目前已累積 20,000 名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。<br> 我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。</p>
+                                <ul class="sns-ic d-flex justify-content-center justify-content-lg-start pl0 mb12 mb-lg25">
+                                    <li class="mr4"><a href="#" ><i class="fz-5 bi bi-line d-block p3 border rounded-circle border-secondary"></i></li>
+                                    <li class="mr4"><a href="#" ><i class="fz-5 bi bi-youtube d-block p3 border rounded-circle border-secondary"></i></a></li>
+                                    <li><a href="#"><i class="fz-5 bi bi-facebook d-block p3 border rounded-circle border-secondary"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec3">
+                <div class="container">
+                    <h6 class="title text-black mb6 fw-7 ml4 position-relative fz-lg6 ml-lg5 pl-lg3">六角學院開的課</h6>
+                    <!-- sm-Layout -->
+                    <div class="swiper teacherInfo-sec3-Swiper mb30 d-lg-none">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cardType2 position-relative">
+                                    <div class="cardType2-img">
+                                        <img src="../assets/images/course-5.png" alt="course">
+                                        <div class="badge">限時 8 折 🔥</div>
+                                    </div>
+                                    <div class="cardType2-txt">
+                                        <h6 class="text-black fw-7 mb4">小白也會！從零開始學習 Python 程式設計</h6>
+                                        <div class="d-flex justify-content-between align-items-center pb4 border-bottom ">
+                                        <a href="#" class="avatar stretched-link">
+                                            <img src="../assets/images/avatar-2.png" alt="avatar" class="mr2">
+                                            <span>Kelly Hsu</span>
+                                        </a>
+                                        <div class="price">
+                                            <span class="d-block myprimary-5 fz-5 fw-7">NT$ 2,480</span>
+                                            <del class="d-block">NT$ 3,200</del>
+                                        </div>
+                                        </div>
+                                        <div class="cardType2-func d-flex justify-content-between align-items-center py4">
+                                        <div class="d-flex flex-column align-items-start">
+                                            <span class="d-block badge mygray-4 bg-mygray-2 py2 px3 fz-subtitle rounded-pill mr2">程式開發</span>
+                                            <span class="d-block">已有 420 位同學加入</span>
+                                        </div>
+                                        <a href="#">
+                                            <img src="../assets/images/icons/star.png" alt="star" class="mr1">
+                                            <span class="mr1">4.0</span>
+                                            <span class="text-muted">(333)</span>
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cardType2 position-relative">
+                                <div class="cardType2-img">
+                                    <img src="../assets/images/course-6.png" alt="course">
+                                    <div class="badge">限時 8 折 🔥</div>
+                                </div>
+                                <div class="cardType2-txt">
+                                    <h6 class="text-black fw-7">全面掌握 JavaScript 開發技術</h6>
+                                    <div class="cardTitle d-flex justify-content-between align-items-center pb4 border-bottom ">
+                                    <a href="#" class="avatar stretched-link">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar" class="mr2">
+                                        <span>Kelly Hsu</span>
+                                    </a>
+                                    <div class="price">
+                                        <span class="d-block myprimary-5 fz-5 fw-7">NT$ 2,480</span>
+                                        <del class="d-block">NT$ 3,200</del>
+                                    </div>
+                                    </div>
+                                    <div class="cardType2-func d-flex justify-content-between align-items-center py4">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="d-block badge mygray-4 bg-mygray-2 py2 px3 fz-subtitle rounded-pill mr2">程式開發</span>
+                                        <span class="d-block">已有 420 位同學加入</span>
+                                    </div>
+                                    <a href="#">
+                                        <img src="../assets/images/icons/star.png" alt="star" class="mr1">
+                                        <span class="mr1">4.0</span>
+                                        <span class="text-muted">(333)</span>
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cardType2 position-relative">
+                                <div class="cardType2-img">
+                                    <img src="../assets/images/course-7.png" alt="course">
+                                    <div class="badge d-none">限時 8 折 🔥</div>
+                                </div>
+                                <div class="cardType2-txt">
+                                    <h6 class="text-black fw-7 mb4">HTML & CSS 網頁設計基礎教程</h6>
+                                    <div class="d-flex justify-content-between align-items-center pb4 border-bottom ">
+                                    <a href="#" class="avatar stretched-link">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar" class="mr2">
+                                        <span>Kelly Hsu</span>
+                                    </a>
+                                    <div class="price">
+                                        <span class="d-block myprimary-5 fz-5 fw-7">NT$ 2,480</span>
+                                        <del class="d-block">NT$ 3,200</del>
+                                    </div>
+                                    </div>
+                                    <div class="cardType2-func d-flex justify-content-between align-items-center py4">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="d-block badge mygray-4 bg-mygray-2 py2 px3 fz-subtitle rounded-pill mr2">程式開發</span>
+                                        <span class="d-block">已有 420 位同學加入</span>
+                                    </div>
+                                    <a href="#">
+                                        <img src="../assets/images/icons/star.png" alt="star" class="mr1">
+                                        <span class="mr1">4.0</span>
+                                        <span class="text-muted">(333)</span>
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cardType2 position-relative">
+                                <div class="cardType2-img">
+                                    <img src="../assets/images/course-8.png" alt="course">
+                                    <div class="badge d-none">限時 8 折 🔥</div>
+                                </div>
+                                <div class="cardType2-txt">
+                                    <h6 class="text-black fw-7 mb4">更進一步！深入學習 Node.js 與後端開發</h6>
+                                    <div class="d-flex justify-content-between align-items-center pb4 border-bottom ">
+                                    <a href="#" class="avatar stretched-link">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar" class="mr2">
+                                        <span>Kelly Hsu</span>
+                                    </a>
+                                    <div class="price">
+                                        <span class="d-block myprimary-5 fz-5 fw-7">NT$ 2,480</span>
+                                        <del class="d-block">NT$ 3,200</del>
+                                    </div>
+                                    </div>
+                                    <div class="cardType2-func d-flex justify-content-between align-items-center py4">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="d-block badge mygray-4 bg-mygray-2 py2 px3 fz-subtitle rounded-pill mr2">程式開發</span>
+                                        <span class="d-block">已有 420 位同學加入</span>
+                                    </div>
+                                    <a href="#">
+                                        <img src="../assets/images/icons/star.png" alt="star" class="mr1">
+                                        <span class="mr1">4.0</span>
+                                        <span class="text-muted">(333)</span>
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- lg-Layout -->
+                    <div class="row mb-lg50 d-none d-lg-flex">
+                        <div class="col-3">
+                            <div class="cardType2 position-relative">
+                                <div class="cardType2-img">
+                                    <img src="../assets/images/course-5.png" alt="course">
+                                    <div class="badge">限時 8 折 🔥</div>
+                                </div>
+                                <div class="cardType2-txt">
+                                    <h6 class="text-black fw-7 mb4">小白也會！從零開始學習 Python 程式設計</h6>
+                                    <div class="d-flex justify-content-between align-items-center pb4 border-bottom ">
+                                    <a href="#" class="avatar stretched-link">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar" class="mr2">
+                                        <span>Kelly Hsu</span>
+                                    </a>
+                                    <div class="price">
+                                        <span class="d-block myprimary-5 fz-5 fw-7">NT$ 2,480</span>
+                                        <del class="d-block">NT$ 3,200</del>
+                                    </div>
+                                    </div>
+                                    <div class="cardType2-func d-flex justify-content-between align-items-center py4">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="d-block badge mygray-4 bg-mygray-2 py2 px3 fz-subtitle rounded-pill mr2">程式開發</span>
+                                        <span class="d-block">已有 420 位同學加入</span>
+                                    </div>
+                                    <a href="#">
+                                        <img src="../assets/images/icons/star.png" alt="star" class="mr1">
+                                        <span class="mr1">4.0</span>
+                                        <span class="text-muted">(333)</span>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="cardType2 position-relative">
+                                <div class="cardType2-img">
+                                    <img src="../assets/images/course-6.png" alt="course">
+                                    <div class="badge">限時 8 折 🔥</div>
+                                </div>
+                                <div class="cardType2-txt">
+                                    <h6 class="text-black fw-7 mb4">全面掌握 JavaScript 開發技術</h6>
+                                    <div class="cardTitle d-flex justify-content-between align-items-center pb4 border-bottom ">
+                                    <a href="#" class="avatar stretched-link">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar" class="mr2">
+                                        <span>Kelly Hsu</span>
+                                    </a>
+                                    <div class="price">
+                                        <span class="d-block myprimary-5 fz-5 fw-7">NT$ 2,480</span>
+                                        <del class="d-block">NT$ 3,200</del>
+                                    </div>
+                                    </div>
+                                    <div class="cardType2-func d-flex justify-content-between align-items-center py4">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="d-block badge mygray-4 bg-mygray-2 py2 px3 fz-subtitle rounded-pill mr2">程式開發</span>
+                                        <span class="d-block">已有 420 位同學加入</span>
+                                    </div>
+                                    <a href="#">
+                                        <img src="../assets/images/icons/star.png" alt="star" class="mr1">
+                                        <span class="mr1">4.0</span>
+                                        <span class="text-muted">(333)</span>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="cardType2 position-relative">
+                                <div class="cardType2-img">
+                                    <img src="../assets/images/course-7.png" alt="course">
+                                    <div class="badge d-none">限時 8 折 🔥</div>
+                                </div>
+                                <div class="cardType2-txt">
+                                    <h6 class="text-black fw-7 mb4">HTML & CSS 網頁設計基礎教程</h6>
+                                    <div class="d-flex justify-content-between align-items-center pb4 border-bottom ">
+                                    <a href="#" class="avatar stretched-link">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar" class="mr2">
+                                        <span>Kelly Hsu</span>
+                                    </a>
+                                    <div class="price">
+                                        <span class="d-block myprimary-5 fz-5 fw-7">NT$ 2,480</span>
+                                        <del class="d-block">NT$ 3,200</del>
+                                    </div>
+                                    </div>
+                                    <div class="cardType2-func d-flex justify-content-between align-items-center py4">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="d-block badge mygray-4 bg-mygray-2 py2 px3 fz-subtitle rounded-pill mr2">程式開發</span>
+                                        <span class="d-block">已有 420 位同學加入</span>
+                                    </div>
+                                    <a href="#">
+                                        <img src="../assets/images/icons/star.png" alt="star" class="mr1">
+                                        <span class="mr1">4.0</span>
+                                        <span class="text-muted">(333)</span>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="cardType2 position-relative">
+                                <div class="cardType2-img">
+                                    <img src="../assets/images/course-8.png" alt="course">
+                                    <div class="badge d-none">限時 8 折 🔥</div>
+                                </div>
+                                <div class="cardType2-txt">
+                                    <h6 class="text-black fw-7 mb4">更進一步！深入學習 Node.js 與後端開發</h6>
+                                    <div class="d-flex justify-content-between align-items-center pb4 border-bottom ">
+                                    <a href="#" class="avatar stretched-link">
+                                        <img src="../assets/images/avatar-2.png" alt="avatar" class="mr2">
+                                        <span>Kelly Hsu</span>
+                                    </a>
+                                    <div class="price">
+                                        <span class="d-block myprimary-5 fz-5 fw-7">NT$ 2,480</span>
+                                        <del class="d-block">NT$ 3,200</del>
+                                    </div>
+                                    </div>
+                                    <div class="cardType2-func d-flex justify-content-between align-items-center py4">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="d-block badge mygray-4 bg-mygray-2 py2 px3 fz-subtitle rounded-pill mr2">程式開發</span>
+                                        <span class="d-block">已有 420 位同學加入</span>
+                                    </div>
+                                    <a href="#">
+                                        <img src="../assets/images/icons/star.png" alt="star" class="mr1">
+                                        <span class="mr1">4.0</span>
+                                        <span class="text-muted">(333)</span>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+        <script type="module" src="../main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </body>
+</html>

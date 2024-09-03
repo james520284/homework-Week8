@@ -1,0 +1,239 @@
+// myColor
+$myprimary-1:#E5F4FF;
+$myprimary-2:#99CFFF;
+$myprimary-3:#66B1FF;
+$myprimary-4:#3F95FF;
+$myprimary-5:#0068FF;
+$myprimary-6:#003BB7;
+.myprimary-1 {color: $myprimary-1;}
+.myprimary-2 {color: $myprimary-2;}
+.myprimary-3 {color: $myprimary-3;}
+.myprimary-4 {color: $myprimary-4;}
+.myprimary-5 {color: $myprimary-5;}
+.myprimary-6 {color: $myprimary-6;}
+.bg-myprimary-1 {background-color: $myprimary-1;}
+.bg-myprimary-2 {background-color: $myprimary-2;}
+.bg-myprimary-3 {background-color: $myprimary-3;}
+.bg-myprimary-4 {background-color: $myprimary-4;}
+.bg-myprimary-5 {background-color: $myprimary-5;}
+.bg-myprimary-6 {background-color: $myprimary-6;}
+
+
+$myinfo-1:#D4F9FE;
+$myinfo-2:#A9EFFE;
+$myinfo-3:#2AAFFC;
+$myinfo-4:#1566B5;
+.myinfo-1 {color: $myinfo-1;}
+.myinfo-2 {color: $myinfo-2;}
+.myinfo-3 {color: $myinfo-3;}
+.myinfo-4 {color: $myinfo-4;}
+.bg-myinfo-1 {color: $myinfo-1;}
+.bg-myinfo-2 {color: $myinfo-2;}
+.bg-myinfo-3 {color: $myinfo-3;}
+.bg-myinfo-4 {color: $myinfo-4;}
+
+
+$mysuccess-1: #F0FCD1;
+$mysuccess-2: #DDFAA5;
+$mysuccess-3: #7CD31F;
+$mysuccess-4: #48970F;
+.mysuccess-1 {color: $mysuccess-1;}
+.mysuccess-2 {color: $mysuccess-2;}
+.mysuccess-3 {color: $mysuccess-3;}
+.mysuccess-4 {color: $mysuccess-4;}
+.bg-mysuccess-1 {background-color: $mysuccess-1;}
+.bg-mysuccess-2 {background-color: $mysuccess-2;}
+.bg-mysuccess-3 {background-color: $mysuccess-3;}
+.bg-mysuccess-4 {background-color: $mysuccess-4;}
+
+
+// $mywarning-1:#FFE0D7;
+// $mywarning-2:#FFBBB0;
+// $mywarning-3:#FF3A55;
+// $mywarning-4:#B71D4F;
+// .mywarning-1 {color: $mywarning-1;}
+// .mywarning-2 {color: $mywarning-2;}
+// .mywarning-3 {color: $mywarning-3;}
+// .mywarning-4 {color: $mywarning-4;}
+// .bg-mywarning-1 {color: $mywarning-1;}
+// .bg-mywarning-2 {color: $mywarning-2;}
+// .bg-mywarning-3 {color: $mywarning-3;}
+// .bg-mywarning-4 {color: $mywarning-4;}
+
+
+$mydanger-1:#FFE0D7;
+$mydanger-2:#FFBBB0;
+$mydanger-3:#FF3A55;
+$mydanger-4:#B71D4F;
+.mydanger-1 {color: $mydanger-1;}
+.mydanger-2 {color: $mydanger-2;}
+.mydanger-3 {color: $mydanger-3;}
+.mydanger-4 {color: $mydanger-4;}
+.bg-mydanger-1 {color: $mydanger-1;}
+.bg-mydanger-2 {color: $mydanger-2;}
+.bg-mydanger-3 {color: $mydanger-3;}
+.bg-mydanger-4 {color: $mydanger-4;}
+
+
+$mygray-1: #F9F9F9;
+$mygray-2: #ECECEC;
+$mygray-3: #909090;
+$mygray-4: #4B4B4B;
+$mygray-5: #282828;
+// $mygray-6: #212529;
+.mygray-1 {color: $mygray-1;}
+.mygray-2 {color: $mygray-2;}
+.mygray-3 {color: $mygray-3;}
+.mygray-4 {color: $mygray-4;}
+.mygray-5 {color: $mygray-5;}
+// .mygray-6 {color: $mygray-6;}
+.bg-mygray-1 {background-color: $mygray-1;}
+.bg-mygray-2 {background-color: $mygray-2;}
+.bg-mygray-3 {background-color: $mygray-3;}
+.bg-mygray-4 {background-color: $mygray-4;}
+.bg-mygray-5 {background-color: $mygray-5;}
+// .bg-mygray-6 {background-color: $mygray-6;}
+
+
+$max: 50;
+// myFontsSize
+@for $i from 0 through $max {.fz-#{$i} {font-size: $i*4px;}}
+
+// phone first
+@for $i from 0 through $max {
+    .fz-sm#{$i} {@include rwd-sm-min {font-size: $i*4px;}}
+    .fz-md#{$i} {@include rwd-md-min {font-size: $i*4px;}}
+    .fz-lg#{$i} {@include rwd-lg-min {font-size: $i*4px;}}
+}
+
+// desktop first
+// @for $i from 0 through $max {
+//     .fz-sm#{$i} {@include rwd-sm-max {font-size: $i*4px;}}
+//     .fz-md#{$i} {@include rwd-md-max {font-size: $i*4px;}}
+//     .fz-lg#{$i} {@include rwd-lg-max {font-size: $i*4px;}}
+// }
+
+//myFontsWeight
+@for $i from 1 through 9 {.fw-#{$i} {font-weight: $i*100;}}
+
+//myBorderRadius
+@for $i from 0 through $max {.border-r#{$i} {border-radius: $i*4px;}}
+
+//mySpace
+@for $i from 0 through $max {
+    .mt#{$i} {margin-top: $i*4px;}
+    .mb#{$i} {margin-bottom: $i*4px;}
+    .ml#{$i} {margin-left: $i*4px;}
+    .mr#{$i} {margin-right: $i*4px;}
+    .mx#{$i} {margin-left: $i*4px;margin-right: $i*4px;}
+    .my#{$i} {margin-top: $i*4px;margin-bottom: $i*4px;}
+    .m#{$i} {margin: $i*4px $i*4px;}
+    .pt#{$i} {padding-top: $i*4px;}
+    .pb#{$i} {padding-bottom: $i*4px;}
+    .pl#{$i} {padding-left: $i*4px;}
+    .pr#{$i} {padding-right: $i*4px;}
+    .px#{$i} {padding-left: $i*4px;padding-right: $i*4px;}
+    .py#{$i} {padding-top: $i*4px;padding-bottom: $i*4px;}
+    .p#{$i} {padding: $i*4px $i*4px;}
+}
+// phone first
+@for $i from 0 through $max {
+    .mt-sm#{$i} {@include rwd-sm-min {margin-top: $i*4px;}}
+    .mb-sm#{$i} {@include rwd-sm-min {margin-bottom: $i*4px;}}
+    .ml-sm#{$i} {@include rwd-sm-min {margin-left: $i*4px;}}
+    .mr-sm#{$i} {@include rwd-sm-min {margin-right: $i*4px;}}
+    .mx-sm#{$i} {@include rwd-sm-min {margin-left: $i*4px;margin-right: $i*4px;}}
+    .my-sm#{$i} {@include rwd-sm-min {margin-top: $i*4px;margin-bottom: $i*4px;}}
+    .m-sm#{$i} {@include rwd-sm-min {margin: $i*4px $i*4px;}}
+
+    .mt-md#{$i} {@include rwd-md-min {margin-top: $i*4px;}}
+    .mb-md#{$i} {@include rwd-md-min {margin-bottom: $i*4px;}}
+    .ml-md#{$i} {@include rwd-md-min {margin-left: $i*4px;}}
+    .mr-md#{$i} {@include rwd-md-min {margin-right: $i*4px;}}
+    .mx-md#{$i} {@include rwd-md-min {margin-left: $i*4px;margin-right: $i*4px;}}
+    .my-md#{$i} {@include rwd-md-min {margin-top: $i*4px;margin-bottom: $i*4px;}}
+    .m-md#{$i} {@include rwd-md-min {margin: $i*4px $i*4px;}}
+
+    .mt-lg#{$i} {@include rwd-lg-min {margin-top: $i*4px;}}
+    .mb-lg#{$i} {@include rwd-lg-min {margin-bottom: $i*4px;}}
+    .ml-lg#{$i} {@include rwd-lg-min {margin-left: $i*4px;}}
+    .mr-lg#{$i} {@include rwd-lg-min {margin-right: $i*4px;}}
+    .mx-lg#{$i} {@include rwd-lg-min {margin-left: $i*4px;margin-right: $i*4px;}}
+    .my-lg#{$i} {@include rwd-lg-min {margin-top: $i*4px;margin-bottom: $i*4px;}}
+    .m-lg#{$i} {@include rwd-lg-min {margin: $i*4px $i*4px;}}
+
+    .pt-sm#{$i} {@include rwd-sm-min {padding-top: $i*4px;}}
+    .pb-sm#{$i} {@include rwd-sm-min {padding-bottom: $i*4px;}}
+    .pl-sm#{$i} {@include rwd-sm-min {padding-left: $i*4px;}}
+    .pr-sm#{$i} {@include rwd-sm-min {padding-right: $i*4px;}}
+    .px-sm#{$i} {@include rwd-sm-min {padding-left: $i*4px;padding-right: $i*4px;}}
+    .py-sm#{$i} {@include rwd-sm-min {padding-top: $i*4px;padding-bottom: $i*4px;}}
+    .p-sm#{$i} {@include rwd-sm-min {padding: $i*4px $i*4px;}}
+
+    .pt-md#{$i} {@include rwd-md-min {padding-top: $i*4px;}}
+    .pb-md#{$i} {@include rwd-md-min {padding-bottom: $i*4px;}}
+    .pl-md#{$i} {@include rwd-md-min {padding-left: $i*4px;}}
+    .pr-md#{$i} {@include rwd-md-min {padding-right: $i*4px;}}
+    .px-md#{$i} {@include rwd-md-min {padding-left: $i*4px;padding-right: $i*4px;}}
+    .py-md#{$i} {@include rwd-md-min {padding-top: $i*4px;padding-bottom: $i*4px;}}
+    .p-md#{$i} {@include rwd-md-min {padding: $i*4px $i*4px;}}
+
+    .pt-lg#{$i} {@include rwd-lg-min {padding-top: $i*4px;}}
+    .pb-lg#{$i} {@include rwd-lg-min {padding-bottom: $i*4px;}}
+    .pl-lg#{$i} {@include rwd-lg-min {padding-left: $i*4px;}}
+    .pr-lg#{$i} {@include rwd-lg-min {padding-right: $i*4px;}}
+    .px-lg#{$i} {@include rwd-lg-min {padding-left: $i*4px;padding-right: $i*4px;}}
+    .py-lg#{$i} {@include rwd-lg-min {padding-top: $i*4px;padding-bottom: $i*4px;}}
+    .p-lg#{$i} {@include rwd-lg-min {padding: $i*4px $i*4px;}}
+}
+
+// desktop first
+// @for $i from 0 through $max {
+//     .mt-sm#{$i} {@include rwd-sm-max {margin-top: $i*4px;}}
+//     .mb-sm#{$i} {@include rwd-sm-max {margin-bottom: $i*4px;}}
+//     .ml-sm#{$i} {@include rwd-sm-max {margin-left: $i*4px;}}
+//     .mr-sm#{$i} {@include rwd-sm-max {margin-right: $i*4px;}}
+//     .mx-sm#{$i} {@include rwd-sm-max {margin-left: $i*4px;margin-right: $i*4px;}}
+//     .my-sm#{$i} {@include rwd-sm-max {margin-top: $i*4px;margin-bottom: $i*4px;}}
+//     .m-sm#{$i} {@include rwd-sm-max {margin: $i*4px $i*4px;}}
+
+//     .mt-md#{$i} {@include rwd-md-max {margin-top: $i*4px;}}
+//     .mb-md#{$i} {@include rwd-md-max {margin-bottom: $i*4px;}}
+//     .ml-md#{$i} {@include rwd-md-max {margin-left: $i*4px;}}
+//     .mr-md#{$i} {@include rwd-md-max {margin-right: $i*4px;}}
+//     .mx-md#{$i} {@include rwd-md-max {margin-left: $i*4px;margin-right: $i*4px;}}
+//     .my-md#{$i} {@include rwd-md-max {margin-top: $i*4px;margin-bottom: $i*4px;}}
+//     .m-md#{$i} {@include rwd-md-max {margin: $i*4px $i*4px;}}
+
+//     .mt-lg#{$i} {@include rwd-lg-max {margin-top: $i*4px;}}
+//     .mb-lg#{$i} {@include rwd-lg-max {margin-bottom: $i*4px;}}
+//     .ml-lg#{$i} {@include rwd-lg-max {margin-left: $i*4px;}}
+//     .mr-lg#{$i} {@include rwd-lg-max {margin-right: $i*4px;}}
+//     .mx-lg#{$i} {@include rwd-lg-max {margin-left: $i*4px;margin-right: $i*4px;}}
+//     .my-lg#{$i} {@include rwd-lg-max {margin-top: $i*4px;margin-bottom: $i*4px;}}
+//     .m-lg#{$i} {@include rwd-lg-max {margin: $i*4px $i*4px;}}
+
+//     .pt-sm#{$i} {@include rwd-sm-max {padding-top: $i*4px;}}
+//     .pb-sm#{$i} {@include rwd-sm-max {padding-bottom: $i*4px;}}
+//     .pl-sm#{$i} {@include rwd-sm-max {padding-left: $i*4px;}}
+//     .pr-sm#{$i} {@include rwd-sm-max {padding-right: $i*4px;}}
+//     .px-sm#{$i} {@include rwd-sm-max {padding-left: $i*4px;padding-right: $i*4px;}}
+//     .py-sm#{$i} {@include rwd-sm-max {padding-top: $i*4px;padding-bottom: $i*4px;}}
+//     .p-sm#{$i} {@include rwd-sm-max {padding: $i*4px $i*4px;}}
+
+//     .pt-md#{$i} {@include rwd-md-max {padding-top: $i*4px;}}
+//     .pb-md#{$i} {@include rwd-md-max {padding-bottom: $i*4px;}}
+//     .pl-md#{$i} {@include rwd-md-max {padding-left: $i*4px;}}
+//     .pr-md#{$i} {@include rwd-md-max {padding-right: $i*4px;}}
+//     .px-md#{$i} {@include rwd-md-max {padding-left: $i*4px;padding-right: $i*4px;}}
+//     .py-md#{$i} {@include rwd-md-max {padding-top: $i*4px;padding-bottom: $i*4px;}}
+//     .p-md#{$i} {@include rwd-md-max {padding: $i*4px $i*4px;}}
+
+//     .pt-lg#{$i} {@include rwd-lg-max {padding-top: $i*4px;}}
+//     .pb-lg#{$i} {@include rwd-lg-max {padding-bottom: $i*4px;}}
+//     .pl-lg#{$i} {@include rwd-lg-max {padding-left: $i*4px;}}
+//     .pr-lg#{$i} {@include rwd-lg-max {padding-right: $i*4px;}}
+//     .px-lg#{$i} {@include rwd-lg-max {padding-left: $i*4px;padding-right: $i*4px;}}
+//     .py-lg#{$i} {@include rwd-lg-max {padding-top: $i*4px;padding-bottom: $i*4px;}}
+//     .p-lg#{$i} {@include rwd-lg-max {padding: $i*4px $i*4px;}}
+// }

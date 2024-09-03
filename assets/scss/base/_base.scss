@@ -1,0 +1,56 @@
+*,*::before,*::after{
+    // outline: 1px solid gray;
+}
+body{
+    font-family: "Poppins",
+        "Noto Sans TC",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Microsoft JhengHei",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    line-height: 1.5;
+    color: $mygray-4;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+i{
+    font-family:sans-serif;
+    display: inline-block;
+    line-height: 0;
+    font-weight: 900;
+}
+span{
+    display: inline-block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+p{
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
+}
+
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}

@@ -1,0 +1,150 @@
+.header{
+  max-width: 1296px;
+  margin-left: auto;
+  margin-right: auto;
+  .navbar{
+    &-brand img {
+      width: 125px;
+    }
+  }
+  .search{
+    &-btn {
+      white-space: nowrap;
+      border-radius: 12px;
+      right:0;
+      top:50%;
+    }
+    &-input {
+      width: 425px;
+      
+    }  
+  }
+  ::placeholder {
+    padding-left: 24px;
+  }
+  .bi-search{
+    left:3%;
+  }
+  
+  .alert{
+    &-menu{
+      min-width: 320px;
+      transform: translate(30%,15%);
+      height: 300px;
+      overflow-y: scroll;
+      p{
+        text-wrap: wrap;
+      }
+      .msg{
+        background-color: $mygray-1;
+      }
+      .msg.done {
+        background-color: white;
+      }
+}
+    &-circle {
+      width: 8px;
+      height: 8px;
+    }
+    &-num {
+      width: 18px;
+      height: 18px;
+      font-size: 10px;
+    }
+  }
+  .phone-menu-dropdown{
+    height: calc(100vh - 100px);
+    overflow-y:scroll;
+  }
+  .type-item.active{
+    border-radius: 12px;
+    background-color: $myprimary-5;
+    color: white;
+  }
+  
+  .loginBtn{
+    left:0;
+    right:0;
+    bottom:20px;
+  }
+  .program-menu{
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .program-menu-header::before{
+    content: '\F27A';
+    font-family: bootstrap-icons;
+    font-size: 16px;
+    top: 20%;
+    left: 3%;
+    position: absolute;
+  }
+  .material-symbols-outlined.campaign {
+    color: $myinfo-3;
+    padding: 8px;
+    margin-right: 16px;
+    border-radius: 100px;
+    background-color: $myinfo-1;
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 20
+  }
+  .material-symbols-outlined.note {
+    color: $mydanger-3;
+    padding: 8px;
+    margin-right: 16px;
+    border-radius: 100px;
+    background-color: $mydanger-1;
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+  }
+  
+    
+
+  @include rwd-lg-min{
+    .navbar {
+      box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 100px;
+      border: 1px solid $mygray-2;
+      &-brand img {
+        width: 200px;
+      }
+    }
+    .menu-w {
+      width: 232px;
+    }
+    .menu-w2 {
+      width: 400px;
+    }
+    .all-menu{
+      transform: translate(-32px,32px);
+      height: 600px;
+      &>li {
+        margin-bottom: 8px;
+      }
+      &>li:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .program-menu-lg{
+      transform: translate(9px,-155px);
+      height: 600px;
+      &>li {
+        margin-bottom: 8px;
+      }
+    
+      &>li:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .developerCourse-menu {
+      transform: translate(-4px, 0px);
+      height: 600px;
+    }
+  }
+}
